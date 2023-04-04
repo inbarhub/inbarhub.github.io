@@ -13,8 +13,8 @@ body {
     width: 1100px; */
 }
 
-.dropdown-toggle:active, .open .dropdown-toggle {
-    background:#723030 !important; 
+.dropdown-menu:active, .open .dropdown-menu {
+    background:#e60e0e !important; 
     color:#000 !important;
 }
 
