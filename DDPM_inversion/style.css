@@ -13,9 +13,10 @@ body {
     width: 1100px; */
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
-    background-color: #1C2331;
-    color: orange !important;}
+.dropdown-toggle:active, .open .dropdown-toggle {
+    background:#723030 !important; 
+    color:#000 !important;
+}
 
 h1 {
     font-size:32px;
