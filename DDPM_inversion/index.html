@@ -15,6 +15,12 @@
 	<script src="https://kit.fontawesome.com/ad96f96272.js" crossorigin="anonymous"></script>
 </head>
 
+<script>
+    function colorFunction() {
+      document.getElementById("valley").style.backgroundColor = "orange";
+    }
+    </script>
+
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -279,11 +285,11 @@
 							<span class="visually-hidden">Toggle Dropdown</span>
 						</button>
 						<ul class="dropdown-menu">
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/inv.png'">Our inversion</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/ddim.png'">DDIM inversion</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p.png'">Prompt-to-prompt</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/pnp.png'">Plug-and-play</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/inv.png' colorFunction()">Our inversion</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/ddim.png' colorFunction()">DDIM inversion</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p.png' colorFunction()">Prompt-to-prompt</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p_our.png' colorFunction()">Prompt-to-prompt with Our inversion</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/pnp.png' colorFunction()">Plug-and-play</a></li>
                             <li><hr class="dropdown-divider"></li> 
 							<li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/valley.png'">Original</a></li>
 						</ul>
