@@ -241,5 +241,5 @@ td {
 
   .disable{
     pointer-events: none; 
-    color: rgb(134, 126, 128);
+    color: rgb(134, 126, 128/ 73%);
   }
