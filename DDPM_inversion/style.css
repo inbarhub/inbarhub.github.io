@@ -240,6 +240,5 @@ td {
   }
 
   .disable{
-
-    background-color: rgba(219, 11, 53, 0.73);
+    color:darkcyan;
   }
