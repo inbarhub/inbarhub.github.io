@@ -106,14 +106,18 @@
 		<h1>Abstract</h1>
 		</center>
 		<p>
-			Denoising diffusion models (DDMs) have led to staggering performance leaps in image generation, editing and restoration. 
-			However, existing DDMs use very large datasets for training. Here, we introduce a framework for training a DDM on a single image. 
-			Our method, which we coin SinDDM, learns the internal statistics of the training image by using a multi-scale diffusion process.
-			To drive the reverse diffusion process, we use a fully-convolutional light-weight denoiser, which is conditioned on both the noise level and the scale. 
-			This architecture allows generating samples of arbitrary dimensions, in a coarse-to-fine manner. 
-			As we illustrate, SinDDM generates diverse high-quality samples, and is applicable in a wide array of tasks, including style transfer and harmonization.
-			Furthermore, it can be easily guided by external supervision. 
-			Particularly, we demonstrate text-guided generation from a single image using a pre-trained CLIP model. 
+			Denoising diffusion probabilistic models (DDPMs) employ a sequence of white Gaussian noise samples to generate an image. In
+            analogy with GANs, those noise maps could be considered as the latent code associated with the image. However, this native
+            noise space does not possess a convenient structure, and is thus challenging to work with in editing tasks.
+            Here, we propose an alternative latent noise space for DDPM that enables a wide range of editing operations via simple means,
+            and present an inversion method for extracting these edit-friendly noise maps for any given image (real or synthetically generated).
+            As opposed to the native DDPM noise space, the edit-friendly noise maps do not have a standard normal distribution and are not
+            statistically independent across timesteps. However, they allow perfect reconstruction of any desired image, and simple
+            transformations on them translate into meaningful manipulations of the output image  (\eg shifting, color edits). Moreover,
+            in text-conditional models, fixing those noise maps while changing the text prompt, modifies semantics while retaining structure.
+            This property enables text-based editing of real images via the diverse DDPM sampling scheme (in contrast with the popular
+            non-diverse DDIM inversion). Moreover, it can be used within existing diffusion-based editing methods to improve their quality
+            and diversity.
 		</p>
 		<center><h1>Talk</h1></center>
 		<p align="center">
