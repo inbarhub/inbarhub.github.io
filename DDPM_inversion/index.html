@@ -15,11 +15,6 @@
 	<script src="https://kit.fontawesome.com/ad96f96272.js" crossorigin="anonymous"></script>
 </head>
 
-<script>
-    function colorFunction() {
-      document.getElementById("valley").style.backgroundColor = "orange";
-    }
-    </script>
 
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -285,11 +280,11 @@
 							<span class="visually-hidden">Toggle Dropdown</span>
 						</button>
 						<ul class="dropdown-menu">
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/inv.png' colorFunction()">Our inversion</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/ddim.png' colorFunction()">DDIM inversion</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p.png' colorFunction()">Prompt-to-prompt</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p_our.png' colorFunction()">Prompt-to-prompt with Our inversion</a></li>
-                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/pnp.png' colorFunction()">Plug-and-play</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/inv.png'">Our inversion</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/ddim.png'">DDIM inversion</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p.png'">Prompt-to-prompt</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+                            <li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/pnp.png'">Plug-and-play</a></li>
                             <li><hr class="dropdown-divider"></li> 
 							<li><a class="dropdown-item" onclick="document.getElementById('valley').src='./resources/comparisons/valley/valley.png'">Original</a></li>
 						</ul>
@@ -413,11 +408,11 @@
 					border-radius: 20px;
 					padding: 0;;">
 
-			@article{kulikov2022sinddm,
-				title      = {SinDDM: A Single Image Denoising Diffusion Model},
-				author     = {Kulikov, Vladimir and Yadin, Shahar and Kleiner, Matan and Michaeli, Tomer},
-				journal    = {arXiv preprint arXiv:2211.16582},
-				year       = {2022}
+			@article{Huberman-Spiegelglas2023,
+				title      = {An Edit Friendly DDPM Noise Space:Inversion and Manipulations},
+				author     = {Huberman-Spiegelglas, Inbar and Kulikov, Vladimir and Michaeli, Tomer},
+				journal    = {arXiv preprint arXiv:XXXX},
+				year       = {2023}
 			}
 			</pre>
 		</tbody>
@@ -427,8 +422,7 @@
 				<tbody>
 				<tr>
 					<td style="font-size:14pt; text-align: left; padding-right: 40px !important;">
-						More results, comparison to other methods and further discussion about our model can be found in the <a href="resources/sinddm_supp.pdf" target="_blank" rel="noopener noreferrer">supplementary material</a>.<br>
-						Our official code implementation can be found in the official SinDDM <a href="https://github.com/fallenshock/SinDDM" target="_blank" rel="noopener noreferrer">github repository</a>.
+						Our official code implementation will be uploaded soon</a>.
 						<!-- Our official code implementation can be found in the official SinDDM github repository (coming soon). -->
 
 					</td>
@@ -469,7 +463,7 @@
 		<hr>
 		<br>
 
-		<!-- acknowledgement -->
+		<!-- acknowledgement
 		<table align=center class="table">
 			<tr>
 				<td>
@@ -483,7 +477,7 @@
 					</left>
 				</td>
 			</tr>
-		</table>
+		</table> -->
 
 	<br>
 
