@@ -238,3 +238,8 @@ td {
     margin-top: 0px; 
     margin-left: 0px; 
   }
+
+  .disable{
+
+    background-color: rgba(219, 11, 53, 0.73);
+  }
