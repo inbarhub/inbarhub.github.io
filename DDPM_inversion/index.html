@@ -113,7 +113,7 @@
             and present an inversion method for extracting these edit-friendly noise maps for any given image (real or synthetically generated).
             As opposed to the native DDPM noise space, the edit-friendly noise maps do not have a standard normal distribution and are not
             statistically independent across timesteps. However, they allow perfect reconstruction of any desired image, and simple
-            transformations on them translate into meaningful manipulations of the output image  (\eg shifting, color edits). Moreover,
+            transformations on them translate into meaningful manipulations of the output image  (e.g., shifting, color edits). Moreover,
             in text-conditional models, fixing those noise maps while changing the text prompt, modifies semantics while retaining structure.
             This property enables text-based editing of real images via the diverse DDPM sampling scheme (in contrast with the popular
             non-diverse DDIM inversion). Moreover, it can be used within existing diffusion-based editing methods to improve their quality
@@ -194,26 +194,26 @@
 		<div class="container">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
 				<div class="col">
-					<img alt="" id="sunset" class="round" src="./resources/data/sunset.png" width="100%" style="padding-right: 2%; max-width:250px;"/>
+					<img alt="" id="gnochi" class="round" src="./resources/comparisons/cat_mirror/gnochi.png" width="100%" style="padding-right: 2%; max-width:250px;"/>
 					<div class="btn-group" id="myDropdown">
-						<button type="button" onclick="document.getElementById('sunset').src='./resources/data/sunset.png'" class="btn btn-info">Style</button>
+						<button type="button" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/gnochi.png'" class="btn btn-info">Style</button>
 						<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
 							<span class="visually-hidden">Toggle Dropdown</span>
 						</button>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/vg.png'">Van Gogh</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/vg_sunflowers.png'">Van Gogh Sunflowers</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/monet.png'">Monet</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/turner.png'">Turner</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/picasso.png'">Picasso</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/picasso_blue.png'">Picasso Blue Period</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/inv.png'">Our inversion</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/ddim.png'">DDIM inversion</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/p2p.png'">Prompt-to-prompt</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/pnp.png'">Plug-and-play</a></li>
+							<!-- <li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/picasso_blue.png'">Picasso Blue Period</a></li>
 							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/rococo.png'">Rococo</a></li>
 							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/anime.png'">Anime</a></li>
 							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/studio_g.png'">Studio Ghibli</a></li>
 							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/greek.png'">Greek Art</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/dh.png'">Damien Hirst</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/dh.png'">Damien Hirst</a></li> -->
 							<li><hr class="dropdown-divider"></li> 
-							<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/data/sunset.png'">Original</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('gnochi').src='./resources/comparisons/cat_mirror/gnochi.png'">Original</a></li>
 						</ul>
 					</div>
 				</div>
