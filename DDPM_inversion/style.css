@@ -213,7 +213,7 @@ td {
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
-.square-pyramid {
+/* .square-pyramid {
     position: absolute;
     top: 52%;
     left: 61%;
@@ -222,8 +222,8 @@ td {
     height: 50%;
     background-color: rgb(187 182 183 / 73%);
 }
- 
-.square-mountains2 {
+  */
+/* .square-mountains2 {
     position: absolute;
     top: 10%;
     left: 75%;
@@ -237,7 +237,7 @@ td {
     position: relative;
     margin-top: 0px; 
     margin-left: 0px; 
-  }
+  } */
 
   .disable{
     color: #555755;
