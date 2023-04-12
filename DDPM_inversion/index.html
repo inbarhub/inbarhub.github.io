@@ -208,25 +208,28 @@
 					<div>
 						<img alt="" id="church" class="round" src="resources/comparisons/church/inv.png" width="100%" style="padding-right: 1%; max-width:200px; "/>
 						<div class="btn-group" id="myDropdown">
-							<button type="button" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'" class="btn btn-info" >Method</button>
+							<div class="btn btn-info" >Method</div>
 							<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
 								<span class="visually-hidden">Toggle Dropdown</span>
 							</button>
-							<ul class="dropdown-menu">
+							<!-- <ul class="dropdown-menu">
 								<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/inv.png'">Our inversion</a></li>
 								<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/ddim.png'">DDIM inversion</a></li>
 								<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p.png'">Prompt-to-prompt</a></li>
 								<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
 								<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/pnp.png'">Plug-and-play</a></li>
-								<!-- <li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/church/picasso_blue.png'">Picasso Blue Period</a></li>
-								<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/rococo.png'">Rococo</a></li>
-								<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/anime.png'">Anime</a></li>
-								<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/studio_g.png'">Studio Ghibli</a></li>
-								<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/greek.png'">Greek Art</a></li>
-								<li><a class="dropdown-item" onclick="document.getElementById('sunset').src='./resources/style/sunset/dh.png'">Damien Hirst</a></li> -->
 								<li><hr class="dropdown-divider"></li> 
 								<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'">Original</a></li>
-							</ul>
+							</ul> -->
+							<select class="dropdown-menu">
+								<option class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/inv.png'" value="Our inversion"></option>
+								<option class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/ddim.png'" value="DDIM inversion"></option>
+								<option class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p.png'" value="Prompt-to-prompt"></option>
+								<option class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p_our.png'" value="Prompt-to-prompt with Our inversion"></option>
+								<option class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/pnp.png'" value="Plug-and-play"></option>
+								<!-- <hr class="dropdown-divider"></li>  -->
+								<option class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'" value="Original"></option>
+							</select>
 						</div>
 					</div>
 				</div>
