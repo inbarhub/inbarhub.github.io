@@ -105,6 +105,16 @@ td.dl-link {
     margin-right: 45px;
 }
 
+.nav-pills > li {
+    background-color:transparent !important;
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus,
+.nav-pills > li > a:active {
+    background-color:#2e353e;
+}
+
 
 .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
     box-shadow:
