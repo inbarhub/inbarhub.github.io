@@ -151,7 +151,7 @@ display: table;
 } */
 
 .btn-group, .btn-group-vertical {
-    position: absolute !important;
+    /* position: absolute !important; */
     display: inline-flex;
     vertical-align: middle;
 }

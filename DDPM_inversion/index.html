@@ -191,90 +191,320 @@
 		<!-- dropdown -->
 		<center>
 		<div class="container">
-			<div class="row row-cols-1 row-cols-md-3 row-cols-lg-6 row-cols-xl-6 gy-6">
+			<div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 gy-2">
 				<div class="col">
-					<div class="">
-						<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A photo of an <span style="color:#FF0000">old <br> church</span></h1>				
-					</div>
-					<div>
-						<img src='resources/comparisons/church/building_4.jpg' style="padding-right: 1%; max-width:200px;">
-					</div>
-				</div>
-				<div class="col" style="margin-top: 3%">
-					<div>
-						<img src='resources/arrow.png' style="padding-right: 1%;max-height:200px;">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A photo of an <span style="color:#FF0000">old church</span></h1>				
+								</div>
+							</div>
+							<div class="col-2">
+							</div>
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A photo of a <span style="color:#FF0000">wooden house</span></h1>				
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<div>
+									<img src='resources/comparisons/church/building_4.jpg' width="100%" style="padding-right: 1%; max-width:200px;">
+								</div>
+							</div>
+							<div class="col-2">
+								<div>
+									<img src='resources/arrow.png' width="95%" style="padding-right: 1%;">
+									<!-- <p style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 70px; padding-top: 60%; padding-right: 10px">&#8594;</p> -->
+								</div>
+							</div>
+							<div class="col-5">
+								<div>
+									<img alt="" id="church" class="round" src="resources/comparisons/church/inv.png" width="100%" style="padding-right: 1%; max-width:200px; "/>
+								</div>
+								<div class="btn-group" id="myDropdown" style="float: right; margin-right: 7%;">
+									<button class="btn btn-info">Method</button>
+									<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+										<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/ddim.png'">DDIM inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/pnp.png'">Plug-and-play</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p.png'">Prompt-to-prompt</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/inv.png'">Our inversion</a></li>
+										<li><hr class="dropdown-divider"></li> 
+										<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'">Original</a></li>
+									</ul>
+									<!-- <select class="">
+										<option value="Our inversion" class="" onclick="document.getElementById('church').src='resources/comparisons/church/inv.png'" ></option>
+										<option value="DDIM inversion" class="" onclick="document.getElementById('church').src='resources/comparisons/church/ddim.png'" ></option>
+										<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/p2p.png'" value="Prompt-to-prompt"></option>
+										<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/p2p_our.png'" value="Prompt-to-prompt with Our inversion"></option>
+										<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/pnp.png'" value="Plug-and-play"></option>
+										<hr class="dropdown-divider"></li>
+										<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'" value="Original"></option>
+									</select> -->
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="">
-						<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A photo of a <span style="color:#FF0000">wooden house</span></h1>				
-					</div>
-					<div>
-						<img alt="" id="church" class="round" src="resources/comparisons/church/inv.png" width="100%" style="padding-right: 1%; max-width:200px; "/>
-					</div>
-					<div class="btn-group" id="myDropdown" >
-						<button class="btn btn-info" style="padding-right: 1%;">Method</button>
-						<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-							<span class="visually-hidden">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/ddim.png'">DDIM inversion</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/pnp.png'">Plug-and-play</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p.png'">Prompt-to-prompt</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/inv.png'">Our inversion</a></li>
-							<li><hr class="dropdown-divider"></li> 
-							<li><a class="dropdown-item" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'">Original</a></li>
-						</ul>
-						<!-- <select class="">
-							<option value="Our inversion" class="" onclick="document.getElementById('church').src='resources/comparisons/church/inv.png'" ></option>
-							<option value="DDIM inversion" class="" onclick="document.getElementById('church').src='resources/comparisons/church/ddim.png'" ></option>
-							<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/p2p.png'" value="Prompt-to-prompt"></option>
-							<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/p2p_our.png'" value="Prompt-to-prompt with Our inversion"></option>
-							<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/pnp.png'" value="Plug-and-play"></option>
-							<hr class="dropdown-divider"></li>
-							<option class="" onclick="document.getElementById('church').src='resources/comparisons/church/building_4.jpg'" value="Original"></option>
-						</select> -->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; ">A <span style="color:#FF0000">cartoon</span> of a <span style="color:#FF0000">cat</span></h1>				
+								</div>
+							</div>
+							<div class="col-2">
+							</div>
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; ">An <span style="color:#FF0000">image</span> of a <span style="color:#FF0000">bear</span></h1>				
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<div>
+									<img src='resources/comparisons/cat-bear/cartoon_0.jpg' width="100%" style="padding-right: 1%; max-width:200px ;">
+								</div>
+							</div>
+							<div class="col-2">
+								<div>
+									<img src='resources/arrow.png' width="95%" style="padding-right: 1%;">
+								</div>
+							</div>
+							<div class="col-5">
+								<div>
+									<img alt="" id="cat-bear" class="round" width="100%" src="./resources/comparisons/cat-bear/inv.png" style="padding-right: 1%; max-width:200px; "/>
+								</div>
+								<div class="btn-group" id="myDropdown" style="float: right; margin-right: 7%;">
+									<button type="button" style="padding-right: 1%" class="btn btn-info" >Method</button>
+									<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" >
+										<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/ddim.png'">DDIM inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/pnp.png'">Plug-and-play</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/p2p.png'">Prompt-to-prompt</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/inv.png'">Our inversion</a></li>
+										<li><hr class="dropdown-divider"></li> 
+										<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/cartoon_0.jpg'">Original</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				
 				<div class="col">
-					<div class="">
-						<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; "><br>A <span style="color:#FF0000">cartoon</span> of a <span style="color:#FF0000">cat</span></h1>				
-					</div>
-					<div>
-						<img src='resources/comparisons/cat-bear/cartoon_0.jpg' style="padding-right: 1%; max-width:200px ;">
-					</div>
-				</div>
-				<div class="col" style="margin-top: 3%">
-					<div>
-						<img src='resources/arrow.png' style="padding-right: 1%;max-height:200px;">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A photo of a <span style="color:#FF0000">horse</span> in the <span style="color:#FF0000">mud</span></h1>				
+								</div>
+							</div>
+							<div class="col-2">
+							</div>
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A photo of a <span style="color:#FF0000">zebra</span> in the <span style="color:#FF0000">snow</span></h1>				
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<div>
+									<img src='resources/comparisons/horse-zebra/horse.jpg' width="100%" style="padding-right: 1%; max-width:200px;">
+								</div>
+							</div>
+							<div class="col-2">
+								<div>
+									<img src='resources/arrow.png' width="95%" style="padding-right: 1%;">
+									<!-- <p style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 70px; padding-top: 60%; padding-right: 10px">&#8594;</p> -->
+								</div>
+							</div>
+							<div class="col-5">
+								<div>
+									<img alt="" id="horse-zebra" class="round" src="resources/comparisons/horse-zebra/inv.png" width="100%" style="padding-right: 1%; max-width:200px; "/>
+								</div>
+								<div class="btn-group" id="myDropdown" style="float: right; margin-right: 7%;">
+									<button class="btn btn-info">Method</button>
+									<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+										<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" onclick="document.getElementById('horse-zebra').src='resources/comparisons/horse-zebra/ddim.png'">DDIM inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('horse-zebra').src='resources/comparisons/horse-zebra/pnp.png'">Plug-and-play</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('horse-zebra').src='resources/comparisons/horse-zebra/p2p.png'">Prompt-to-prompt</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('horse-zebra').src='resources/comparisons/horse-zebra/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('horse-zebra').src='resources/comparisons/horse-zebra/inv.png'">Our inversion</a></li>
+										<li><hr class="dropdown-divider"></li> 
+										<li><a class="dropdown-item" onclick="document.getElementById('horse-zebra').src='resources/comparisons/horse-zebra/horse.jpg'">Original</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="">
-						<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; "><br>An <span style="color:#FF0000">image</span> of a <span style="color:#FF0000">bear</span></h1>				
-					</div>
-					<div>
-						<img alt="" id="cat-bear" class="round" width="100%" src="./resources/comparisons/cat-bear/inv.png" style="padding-right: 1%; max-width:200px; "/>
-					</div>
-					<div class="btn-group" id="myDropdown">
-						<button type="button" style="padding-right: 1%" class="btn btn-info" >Method</button>
-						<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" >
-							<span class="visually-hidden">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/ddim.png'">DDIM inversion</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/pnp.png'">Plug-and-play</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/p2p.png'">Prompt-to-prompt</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
-							<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/inv.png'">Our inversion</a></li>
-							<li><hr class="dropdown-divider"></li> 
-							<li><a class="dropdown-item" onclick="document.getElementById('cat-bear').src='./resources/comparisons/cat-bear/cartoon_0.jpg'">Original</a></li>
-						</ul>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; ">An <span style="color:#FF0000">origami</span> of a <span style="color:#FF0000"> <br> hummingbird</span></h1>				
+								</div>
+							</div>
+							<div class="col-2">
+							</div>
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; ">A <span style="color:#FF0000">sketch</span> of a <span style="color:#FF0000"> parrot</span></h1>				
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<div>
+									<img src='resources/comparisons/parrot/origami_2.jpg' width="100%" style="padding-right: 1%; max-width:200px ;">
+								</div>
+							</div>
+							<div class="col-2">
+								<div>
+									<img src='resources/arrow.png' width="95%" style="padding-right: 1%;">
+								</div>
+							</div>
+							<div class="col-5">
+								<div>
+									<img alt="" id="parrot" class="round" width="100%" src="./resources/comparisons/parrot/inv.png" style="padding-right: 1%; max-width:200px; "/>
+								</div>
+								<div class="btn-group" id="myDropdown" style="float: right; margin-right: 7%;">
+									<button type="button" style="padding-right: 1%" class="btn btn-info" >Method</button>
+									<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" >
+										<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" onclick="document.getElementById('parrot').src='./resources/comparisons/parrot/ddim.png'">DDIM inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('parrot').src='./resources/comparisons/parrot/pnp.png'">Plug-and-play</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('parrot').src='./resources/comparisons/parrot/p2p.png'">Prompt-to-prompt</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('parrot').src='./resources/comparisons/parrot/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('parrot').src='./resources/comparisons/parrot/inv.png'">Our inversion</a></li>
+										<li><hr class="dropdown-divider"></li> 
+										<li><a class="dropdown-item" onclick="document.getElementById('parrot').src='./resources/comparisons/parrot/origami_2.jpg'">Original</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col" style="margin-top: 3%">
+				<div class="col">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A scene of a valley</span></h1>				
+								</div>
+							</div>
+							<div class="col-2">
+							</div>
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px;">A scene of a valley <br> <span style="color:#FF0000">with waterfall</span></h1>				
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<div>
+									<img src='resources/comparisons/valley/valley.png' width="100%" style="padding-right: 1%; max-width:200px;">
+								</div>
+							</div>
+							<div class="col-2">
+								<div>
+									<img src='resources/arrow.png' width="95%" style="padding-right: 1%;">
+									<!-- <p style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 70px; padding-top: 60%; padding-right: 10px">&#8594;</p> -->
+								</div>
+							</div>
+							<div class="col-5">
+								<div>
+									<img alt="" id="valley" class="round" src="resources/comparisons/valley/inv.png" width="100%" style="padding-right: 1%; max-width:200px; "/>
+								</div>
+								<div class="btn-group" id="myDropdown" style="float: right; margin-right: 7%;">
+									<button class="btn btn-info">Method</button>
+									<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+										<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" onclick="document.getElementById('valley').src='resources/comparisons/valley/ddim.png'">DDIM inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('valley').src='resources/comparisons/valley/pnp.png'">Plug-and-play</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('valley').src='resources/comparisons/valley/p2p.png'">Prompt-to-prompt</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('valley').src='resources/comparisons/valley/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('valley').src='resources/comparisons/valley/inv.png'">Our inversion</a></li>
+										<li><hr class="dropdown-divider"></li> 
+										<li><a class="dropdown-item" onclick="document.getElementById('valley').src='resources/comparisons/valley/valley.png'">Original</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; "><br>A <span style="color:#FF0000">toy</span> of a jeep</h1>				
+								</div>
+							</div>
+							<div class="col-2">
+							</div>
+							<div class="col-5">
+								<div class="">
+									<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; "><br>A <span style="color:#FF0000">toy</span> of a jeep</h1>				
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5">
+								<div>
+									<img src='resources/comparisons/jeep/toy_18.jpg' width="100%" style="padding-right: 1%; max-width:200px ;">
+								</div>
+							</div>
+							<div class="col-2">
+								<div>
+									<img src='resources/arrow.png' width="95%" style="padding-right: 1%;">
+								</div>
+							</div>
+							<div class="col-5">
+								<div>
+									<img alt="" id="jeep" class="round" width="100%" src="./resources/comparisons/jeep/inv.png" style="padding-right: 1%; max-width:200px; "/>
+								</div>
+								<div class="btn-group" id="myDropdown" style="float: right; margin-right: 7%;">
+									<button type="button" style="padding-right: 1%" class="btn btn-info" >Method</button>
+									<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" >
+										<span class="visually-hidden">Toggle Dropdown</span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/ddim.png'">DDIM inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/pnp.png'">Plug-and-play</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/p2p.png'">Prompt-to-prompt</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/p2p_our.png'">Prompt-to-prompt with Our inversion</a></li>
+										<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/inv.png'">Our inversion</a></li>
+										<li><hr class="dropdown-divider"></li> 
+										<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/toy_18.jpg'">Original</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col" style="margin-top: 3%">
 					<div class="">
 						<h1 style="font-weight: normal; font-family: 'Comic Sans MS'; font-size: 16px; ">A photo of a <span style="color:#FF0000">horse</span> in the <span style="color:#FF0000">mud</span></h1>				
 					</div>
@@ -282,7 +512,7 @@
 						<img src='resources/comparisons/horse-zebra/horse.jpg' style="padding-right: 1%; max-width:200px; ">
 					</div>
 				</div>
-				<div class="col" style="margin-top: 3%">
+				<div class="col" style="margin-top: 6%">
 					<div>
 						<img src='resources/arrow.png' style="padding-right: 1%; max-height:200px;">
 					</div>
@@ -318,7 +548,7 @@
 						<img src='resources/comparisons/parrot/origami_2.jpg' style="padding-right: 1%; max-width:200px; ">
 					</div>
 				</div>
-				<div class="col" style="margin-top: 3%">
+				<div class="col" style="margin-top: 6%">
 					<div>
 						<img src='resources/arrow.png' style="padding-right: 1%;max-height:200px;">
 					</div>
@@ -354,7 +584,7 @@
 						<img src='resources/comparisons/valley/valley.png' style="padding-right: 1%; max-width:200px;">
 					</div>
 				</div>
-				<div class="col" style="margin-top: 3%">
+				<div class="col" style="margin-top: 6%">
 					<div>
 						<img src='resources/arrow.png' style="padding-right: 1%;max-height:200px;max-width:90px;">
 					</div>
@@ -390,7 +620,7 @@
 						<img src='resources/comparisons/jeep/toy_18.jpg' style="padding-right: 1%; max-width:200px; ">
 					</div>
 				</div>
-				<div class="col" style="margin-top: 3%">
+				<div class="col" style="margin-top: 6%">
 					<div>
 						<img src='resources/arrow.png' style="padding-right: 1%;max-height:200px;max-width:90px;">
 					</div>
@@ -417,7 +647,7 @@
 							<li><a class="dropdown-item" onclick="document.getElementById('jeep').src='./resources/comparisons/jeep/toy_18.jpg'">Original</a></li>
 						</ul>
 					<div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		</center>
